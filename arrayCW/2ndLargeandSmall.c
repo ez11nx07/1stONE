@@ -1,16 +1,17 @@
 #include<stdio.h>
 #include<limits.h>
 int main(){
-    int arr[5];
-    int i;
-    printf("Enter the elements of array:\n");
-    for(i=0;i<5;i++){
-        // printf("Element %d:",i+1);
-        scanf("%d",&arr[i]);
-    }
+    // int arr[5];
+    // int i;
+    // printf("Enter the elements of array:\n");
+    // for(i=0;i<5;i++){
+    //     // printf("Element %d:",i+1);
+    //     scanf("%d",&arr[i]);
+    // }
+    int arr[5] = {10,20,30,40,50};
     int max = arr[0];
     int min = arr[0];
-    for(i=0;i<5;i++){
+    for(int i=0;i<5;i++){
         if(arr[i]>max)
         max = arr[i];
         if(arr[i] < min)
@@ -18,7 +19,7 @@ int main(){
     }
     int secondmax = INT_MIN;
     int secondmin = INT_MAX;
-     for(i=0;i<5;i++){
+     for(int i=0;i<5;i++){
         if(arr[i] > secondmax && arr[i] < max)
         secondmax = arr[i];
         if(arr[i] < secondmin && arr[i] > min)
